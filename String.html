@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>
+			Admin
+		</title>
+	</head>
+	<body>
+		<form name="my">
+			<b><label for="name">Name:</label></b><input type="text"  id="name" name="name"><br><br>
+			<b><label for="pwd">Password:</label></b><input type="text" id="pwd" name="pwd"><br><br>
+			<input type="button" onclick="checking(pwd)" value="Submit">
+		</form>
+		<script type = "text/javascript">
+			function checking(pwd)
+			{
+				if(!pwd.value)
+				{
+					alert("Password is null")
+				}
+				else if((pwd.value.length)<6 )
+				{
+					alert("Password length is less than size")
+				}
+				else if(!/[A-Z]/.test(pwd.value))
+				{
+					alert("Password must contain one upper case")
+				}
+				else
+				{		
+					alert("Done")
+				}
+			}
+		</script>
+	</body>
+</html>
