@@ -1,3 +1,4 @@
+//I have addaed this code in the git hub
 package seven;
 import java.lang.*;
 import java.util.*;
